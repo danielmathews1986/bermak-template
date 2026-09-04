@@ -1,6 +1,6 @@
 import './App.css'
-import logo from "../assets/img/logo.webp"
-import image1 from "../assets/img/about/about-square-10.webp"
+import logo from "../public/assets/img/logo.webp"
+import image1 from "../public/assets/img/about/about-square-10.webp"
 import { useEffect, useState } from 'react';
 
 function App() {

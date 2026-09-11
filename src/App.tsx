@@ -1,6 +1,5 @@
 import './App.css'
 import logo from "../public/assets/img/logo-bermak.png"
-import image1 from "../public/assets/img/about/about-square-10.webp"
 import { useEffect, useState } from 'react';
 
 function App() {

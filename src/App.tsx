@@ -1,5 +1,5 @@
 import './App.css'
-import logo from "../public/assets/img/logo.webp"
+import logo from "../public/assets/img/logo-bermak.png"
 import image1 from "../public/assets/img/about/about-square-10.webp"
 import { useEffect, useState } from 'react';
 
@@ -34,7 +34,6 @@ function App() {
 
           <a href="/" className="logo d-flex align-items-center">
             <img src={logo} alt="Bermak" />
-            <h1 className="sitename">Bermak</h1>
           </a>
 
           <nav id="navmenu" className="navmenu">
@@ -45,22 +44,22 @@ function App() {
               </li>
 
               <li>
-                <a href="#about">About</a>
+                <a href="#about">Acerca de nosotros</a>
               </li>
 
               <li>
-                <a href="#services">Services</a>
+                <a href="#services">Servicios</a>
               </li>
 
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio">Productos</a>
               </li>
 
               <li>
-                <a href="#team">Team</a>
+                <a href="#team">Equipo</a>
               </li>
 
-              <li className="dropdown">
+              {/* <li className="dropdown">
                 <a href="#">
                   <span>Dropdown</span>
                   <i className="bi bi-chevron-down toggle-dropdown"></i>
@@ -90,10 +89,10 @@ function App() {
                   <li><a href="#">Dropdown 3</a></li>
                   <li><a href="#">Dropdown 4</a></li>
                 </ul>
-              </li>
+              </li> */}
 
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" >Contactenos</a>
               </li>
             </ul>
 
@@ -116,36 +115,47 @@ function App() {
 
           <div className="container" data-aos="fade-up" data-aos-delay="100">
 
-            <div className="row align-items-center">
-              <div className="col-lg-6">
+            <div className="hero-text row align-items-center">
+              <div className="col-lg-12">
                 <div className="hero-content">
-                  <h1 data-aos="fade-up" data-aos-delay="200">Transform Your Business Vision Into Reality</h1>
-                  <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                  <h1 data-aos="fade-up" data-aos-delay="200">Soluciones para tu negocio y tu hogar</h1>
+                  <p data-aos="fade-up" data-aos-delay="300">
+                    En BERMAK encuentras asesoria, gestion de tramite y Productos en un solo lugar. Te acompanamos en gestiones legales, administrativas, registrales y municipales, y ademas te ofrecemos moda, hogar , accesorios y novedades atraves de BERMARK Market.
+                  </p>
                   <div className="hero-cta" data-aos="fade-up" data-aos-delay="400">
-                    <a href="#about" className="btn-primary">Get Started Today</a>
+                    <a href="#about" className="btn-primary">Solicitar asesoria</a>
                     <a href="#https://www.youtube.com/watch?v=Y7f98aduVJ8" className="btn-secondary glightbox">
                       <i className="bi bi-play-circle"></i>
-                      Watch Demo
+                      Explorar BERMAK
                     </a>
                   </div>
                   <div className="hero-stats" data-aos="fade-up" data-aos-delay="500">
                     <div className="stat-item">
-                      <div className="stat-number">500+</div>
-                      <div className="stat-label">Successful Projects</div>
+                      <div className="stat-number">
+                        <i className="bi bi-people"></i>
+                      </div>
+                      <div className="stat-label">4 Areas</div>
+                      <p>de asesoria y gestion</p>
                     </div>
                     <div className="stat-item">
-                      <div className="stat-number">98%</div>
-                      <div className="stat-label">Client Satisfaction</div>
+                      <div className="stat-number">
+                        <i className="bi bi-people"></i>
+                      </div>
+                      <div className="stat-label">+ Servicios</div>
+                      <p>para personas y negocios</p>
                     </div>
                     <div className="stat-item">
-                      <div className="stat-number">10+</div>
-                      <div className="stat-label">Years Experience</div>
+                      <div className="stat-number">
+                        <i className="bi bi-people"></i>
+                      </div>
+                      <div className="stat-label">+ Market</div>
+                      <p>moda, hogar y novedades</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <div className="hero-image" data-aos="fade-left" data-aos-delay="300">
                   <img src={image1} alt="Business Success" className="img-fluid" />
                   <div className="floating-card" data-aos="zoom-in" data-aos-delay="600">
@@ -157,9 +167,12 @@ function App() {
                       <div className="growth-percentage">+45%</div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div> 
+              </div> */}
+
             </div>
+
+
 
           </div>
 
@@ -234,9 +247,9 @@ function App() {
 
 
           <div className="container section-title" data-aos="fade-up">
-            <span className="subtitle">Services</span>
-            <h2>What We Do Offer</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+            <span className="subtitle">Servicios</span>
+            <h2>Nuestros servicios de asesoria</h2>
+            <p>Soluciones practicas para tus tramites y proyectos</p>
           </div>
 
           <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -248,10 +261,22 @@ function App() {
                   <div className="service-icon">
                     <i className="bi bi-graph-up-arrow"></i>
                   </div>
-                  <h3>Strategic Consulting</h3>
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam.</p>
-                  <a href="service-details.html" className="service-link">
-                    Learn More <i className="bi bi-arrow-right"></i>
+                  <h3>Asesoria Administrativa</h3>
+                  <p>Te apoyamos en gestion de tramistes y procedimientos administrativos, facilitando soluciones rapidas y seguras para tus gestiones personales o de negocio.</p>
+                  <span className="client-service">Tramites RENIEC (DNI, duplicidad, etc.)</span>
+                  <span className="client-service">Antecedentes policiales(virtuales)</span>
+                  <span className="client-service">Antecedentes panales(virtuales)</span>
+                  <span className="client-service">Antecedentes judiciales(virtuales)</span>
+                  <span className="client-service">Retificacion de actas de nacimiento</span>
+                  <span className="client-service">Obtencion de actas de nacimiento virtuales</span>
+                  <span className="client-service">Adjudicaciones</span>
+                  <span className="client-service">Copias literales de actas(RENIEC)</span>
+                  <span className="client-service">Vigencia de poder</span>
+      
+
+
+                  <a href="https://wa.me/51988844406?text=Hola%2C%20quisiera%20consultar%20sobre%20esta%20%C3%A1rea." className="service-link" target="_blank">
+                    Consultar sobre esta area <i className="bi bi-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -416,9 +441,9 @@ function App() {
 
 
           <div className="container section-title" data-aos="fade-up">
-            <span className="subtitle">Portfolio</span>
-            <h2>Check Our Portfolio</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+            <span className="subtitle">Productos</span>
+            <h2>Visita nuestros productos</h2>
+            {/* <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>  */}
           </div>
 
           <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -791,9 +816,7 @@ function App() {
         </section>
 
 
-        <section id="testimonials" className="testimonials section">
-
-
+        {/* <section id="testimonials" className="testimonials section">
           <div className="container section-title" data-aos="fade-up">
             <span className="subtitle">Testimonials</span>
             <h2>What They Say</h2>
@@ -803,7 +826,7 @@ function App() {
           <div className="container" data-aos="fade-up" data-aos-delay="100">
 
             <div className="testimonial-slider swiper init-swiper">
-              {/* <script type="application/json" className="swiper-config">
+              <script type="application/json" className="swiper-config">
                 {
                   "loop": true,
                 "speed": 600,
@@ -825,7 +848,7 @@ function App() {
             }
           }
         }
-              </script> */}
+              </script>
 
 
 
@@ -968,7 +991,7 @@ function App() {
 
           </div>
 
-        </section>
+        </section> */}
 
 
         <section id="contact" className="contact section light-background">
@@ -1092,9 +1115,11 @@ function App() {
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-about">
               <a href="index.html" className="logo d-flex align-items-center">
-                <span className="sitename">Axis</span>
+                <span className="sitename">
+                  <img src={logo} alt="Bermak" />
+                </span>
               </a>
-              <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+              <p>En BERMAK encuentras asesoria, gestion de tramite y Productos en un solo lugar. Te acompanamos en gestiones legales, administrativas, registrales y municipales, y ademas te ofrecemos moda, hogar , accesorios y novedades atraves de BERMARK Market.</p>
               <div className="social-links d-flex mt-4">
                 <a href=""><i className="bi bi-twitter-x"></i></a>
                 <a href=""><i className="bi bi-facebook"></i></a>
@@ -1138,9 +1163,9 @@ function App() {
         </div>
 
         <div className="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong className="px-1 sitename">Axis</strong> <span>All Rights Reserved</span></p>
+          <p>© <span>Copyright</span> <strong className="px-1 sitename">Bermak</strong> <span>All Rights Reserved</span></p>
           <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+            Designed by <a href="#">Tugo</a> | <a href="#">DevTools</a>
           </div>
         </div>
 

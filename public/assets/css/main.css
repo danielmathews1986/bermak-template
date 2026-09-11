@@ -24,7 +24,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #666666; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #313131; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #eb2b7f; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -159,7 +159,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 76px;
   margin-right: 8px;
 }
 
@@ -428,7 +428,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #ffc107;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -460,6 +460,7 @@ h6 {
 .footer .footer-about p {
   font-size: 14px;
   font-family: var(--heading-font);
+  color: #000000;
 }
 
 .footer .social-links a {
@@ -469,9 +470,9 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, #000000 transparent 30%);
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, #000000, transparent 30%);
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -486,6 +487,7 @@ h6 {
   font-weight: 400;
   position: relative;
   padding-bottom: 12px;
+  color: #000000;
 }
 
 .footer .footer-links {
@@ -515,7 +517,7 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, #000000, transparent 20%);
   display: inline-block;
   line-height: 1;
 }
@@ -526,21 +528,28 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+  color: #000000;
 }
 
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  color: #000000;
 }
 
 .footer .copyright p {
   margin-bottom: 0;
+  color: #000000;
 }
 
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+
+.footer .credits  a{
+  color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -588,7 +597,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #fa9c2f;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -602,7 +611,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, #fa9c2f, transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -790,23 +799,17 @@ section,
 
 .hero .hero-content h1 {
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 2rem;
   color: var(--heading-color);
-}
-
-@media (max-width: 768px) {
-  .hero .hero-content h1 {
-    font-size: 2.5rem;
-  }
 }
 
 .hero .hero-content p {
   font-size: 1.125rem;
   line-height: 1.7;
   margin-bottom: 3rem;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, #000000, transparent 20%);
 }
 
 .hero .hero-cta {
@@ -814,6 +817,12 @@ section,
   gap: 1.5rem;
   margin-bottom: 4rem;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero .hero-content h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -957,11 +966,7 @@ section,
   .hero {
     padding: 80px 0 60px;
   }
-
-  .hero::before {
-    display: none;
-  }
-
+  
   .hero .row {
     flex-direction: column-reverse;
   }
@@ -1191,7 +1196,8 @@ section,
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+  background: linear-gradient(135deg, #37369d,
+ color-mix(in srgb, #01a8dd, #0c69ba 20%));
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease-in-out;
@@ -4146,6 +4152,65 @@ section,
   box-shadow: 0 15px 35px color-mix(in srgb, var(--accent-color), transparent 65%);
 }
 
+/*--------------------------------------------------------------
+# Starter Section Section
+--------------------------------------------------------------*/
+.starter-section {
+  /* Add your styles here */
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/home-v2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    white 0%,
+    rgba(255, 255, 255, 0.9) 20%,
+    rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 255, 255, 0) 65%
+  );
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  padding: 80px 40px;
+  
+}
+
+.btn-primary-solicitud {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.client-service {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--default-color);
+  margin-bottom: 16px;
+}
+
 @media (max-width: 992px) {
   .error-404 {
     padding: 80px 0;
@@ -4169,11 +4234,12 @@ section,
   .error-404 .helpful-links .links-title {
     margin-bottom: 40px;
   }
+  .hero-text {
+    width: 100%;
+  }
+
+  .header .logo img {
+    max-height: 74px;
+  }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}

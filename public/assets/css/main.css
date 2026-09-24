@@ -14,29 +14,41 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #666666; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #eb2b7f; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #666666;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #000000;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #eb2b7f;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #999999;  /* The default color of the main navmenu links */
-  --nav-hover-color: #000000; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #666666; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #313131; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #999999;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #000000;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #666666;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #313131;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -548,7 +560,7 @@ h6 {
   font-size: 13px;
 }
 
-.footer .credits  a{
+.footer .credits a {
   color: #000000;
 }
 
@@ -966,7 +978,7 @@ section,
   .hero {
     padding: 80px 0 60px;
   }
-  
+
   .hero .row {
     flex-direction: column-reverse;
   }
@@ -1174,7 +1186,8 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  background-color: color-mix(in srgb, var(--background-color), var(--accent-color) 2%);
+  background-color: #ededed;
+  /* background-color: color-mix(in srgb, var(--background-color), var(--accent-color) 2%); */
 }
 
 .services .service-item {
@@ -1197,7 +1210,7 @@ section,
   right: 0;
   height: 4px;
   background: linear-gradient(135deg, #37369d,
- color-mix(in srgb, #01a8dd, #0c69ba 20%));
+      color-mix(in srgb, #01a8dd, #0c69ba 20%));
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease-in-out;
@@ -1254,7 +1267,7 @@ section,
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 32px;
-  flex-grow: 1;
+  flex-grow: 0.3;
 }
 
 .services .service-item .service-link {
@@ -4174,13 +4187,11 @@ section,
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    to right,
-    white 0%,
-    rgba(255, 255, 255, 0.9) 20%,
-    rgba(255, 255, 255, 0.5) 40%,
-    rgba(255, 255, 255, 0) 65%
-  );
+  background: linear-gradient(to right,
+      white 0%,
+      rgba(255, 255, 255, 0.9) 20%,
+      rgba(255, 255, 255, 0.5) 40%,
+      rgba(255, 255, 255, 0) 65%);
 }
 
 .hero-text {
@@ -4188,7 +4199,7 @@ section,
   z-index: 1;
   width: 50%;
   padding: 80px 40px;
-  
+
 }
 
 .btn-primary-solicitud {
@@ -4234,6 +4245,7 @@ section,
   .error-404 .helpful-links .links-title {
     margin-bottom: 40px;
   }
+
   .hero-text {
     width: 100%;
   }
@@ -4241,5 +4253,8 @@ section,
   .header .logo img {
     max-height: 74px;
   }
-}
 
+  .hero-text {
+    padding: 80px 10px;
+  }
+}

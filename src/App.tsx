@@ -1,6 +1,7 @@
 import './App.css'
 import logo from "../public/assets/img/logo-bermak.png"
 import { useEffect, useState } from 'react';
+import { SectionServices } from './features/components/services';
 
 function App() {
 
@@ -42,9 +43,9 @@ function App() {
                 <a href="#hero" className="active">Home</a>
               </li>
 
-              <li>
+              {/* <li>
                 <a href="#about">Acerca de nosotros</a>
-              </li>
+              </li> */}
 
               <li>
                 <a href="#services">Servicios</a>
@@ -54,9 +55,9 @@ function App() {
                 <a href="#portfolio">Productos</a>
               </li>
 
-              <li>
+              {/* <li>
                 <a href="#team">Equipo</a>
-              </li>
+              </li> */}
 
               {/* <li className="dropdown">
                 <a href="#">
@@ -177,7 +178,7 @@ function App() {
 
         </section>
 
-        <section id="about" className="about section">
+        {/* <section id="about" className="about section">
 
 
           <div className="container section-title" data-aos="fade-up">
@@ -239,120 +240,17 @@ function App() {
 
           </div>
 
-        </section>
+        </section> */}
 
 
         <section id="services" className="services section">
 
-
-          <div className="container section-title" data-aos="fade-up">
-            <span className="subtitle">Servicios</span>
-            <h2>Nuestros servicios de asesoria</h2>
-            <p>Soluciones practicas para tus tramites y proyectos</p>
-          </div>
-
-          <div className="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div className="row gy-5">
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div className="service-item">
-                  <div className="service-icon">
-                    <i className="bi bi-graph-up-arrow"></i>
-                  </div>
-                  <h3>Asesoria Administrativa</h3>
-                  <p>Te apoyamos en gestion de tramistes y procedimientos administrativos, facilitando soluciones rapidas y seguras para tus gestiones personales o de negocio.</p>
-                  <span className="client-service">Tramites RENIEC (DNI, duplicidad, etc.)</span>
-                  <span className="client-service">Antecedentes policiales(virtuales)</span>
-                  <span className="client-service">Antecedentes panales(virtuales)</span>
-                  <span className="client-service">Antecedentes judiciales(virtuales)</span>
-                  <span className="client-service">Retificacion de actas de nacimiento</span>
-                  <span className="client-service">Obtencion de actas de nacimiento virtuales</span>
-                  <span className="client-service">Adjudicaciones</span>
-                  <span className="client-service">Copias literales de actas(RENIEC)</span>
-                  <span className="client-service">Vigencia de poder</span>
-      
-
-
-                  <a href="https://wa.me/51988844406?text=Hola%2C%20quisiera%20consultar%20sobre%20esta%20%C3%A1rea." className="service-link" target="_blank">
-                    Consultar sobre esta area <i className="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="service-item">
-                  <div className="service-icon">
-                    <i className="bi bi-palette"></i>
-                  </div>
-                  <h3>Brand Development</h3>
-                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
-                  <a href="service-details.html" className="service-link">
-                    Learn More <i className="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div className="service-item">
-                  <div className="service-icon">
-                    <i className="bi bi-code-slash"></i>
-                  </div>
-                  <h3>Digital Solutions</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris vitae congue nulla. Proin eget tortor risus vestibulum.</p>
-                  <a href="service-details.html" className="service-link">
-                    Learn More <i className="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div className="service-item">
-                  <div className="service-icon">
-                    <i className="bi bi-megaphone"></i>
-                  </div>
-                  <h3>Marketing Strategy</h3>
-                  <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Cras ultricies ligula sed magna dictum porta.</p>
-                  <a href="service-details.html" className="service-link">
-                    Learn More <i className="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="service-item">
-                  <div className="service-icon">
-                    <i className="bi bi-people"></i>
-                  </div>
-                  <h3>Team Building</h3>
-                  <p>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                  <a href="service-details.html" className="service-link">
-                    Learn More <i className="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div className="service-item">
-                  <div className="service-icon">
-                    <i className="bi bi-bar-chart"></i>
-                  </div>
-                  <h3>Data Analytics</h3>
-                  <p>Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
-                  <a href="service-details.html" className="service-link">
-                    Learn More <i className="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
+          <SectionServices />
 
         </section>
 
 
-        <section id="why-us" className="why-us section">
+        {/* <section id="why-us" className="why-us section">
 
 
           <div className="container section-title" data-aos="fade-up">
@@ -433,7 +331,7 @@ function App() {
 
           </div>
 
-        </section>
+        </section> */}
 
 
         <section id="portfolio" className="portfolio section">
@@ -702,7 +600,7 @@ function App() {
 
             </div>
 
-            <div className="portfolio-conclusion" data-aos="fade-up" data-aos-delay="400">
+            {/* <div className="portfolio-conclusion" data-aos="fade-up" data-aos-delay="400">
               <div className="conclusion-content">
                 <h4>Ready to elevate your business?</h4>
                 <p>Let's discuss how we can transform your digital presence and drive meaningful results for your organization.</p>
@@ -716,14 +614,14 @@ function App() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
 
         </section>
 
 
-        <section id="team" className="team section">
+        {/* <section id="team" className="team section">
 
 
           <div className="container section-title" data-aos="fade-up">
@@ -812,7 +710,7 @@ function App() {
 
           </div>
 
-        </section>
+        </section> */}
 
 
         {/* <section id="testimonials" className="testimonials section">
@@ -995,13 +893,20 @@ function App() {
 
         <section id="contact" className="contact section light-background">
 
+  
           <div className="container section-title" data-aos="fade-up">
-            <span className="subtitle">Contact</span>
-            <h2>Let's Connect</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+            <span className="subtitle">Contactenos</span>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.267291208906!2d-76.96604783720846!3d-12.16219694506736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b8f86cd5da45%3A0xb92d5ef8b37104e8!2sAv.%20Guillermo%20Billinghurst%201075%2C%20San%20Juan%20de%20Miraflores%2015801!5e0!3m2!1ses!2spe!4v1790226143716!5m2!1ses!2spe" width="100%" height="450" loading="lazy"></iframe>
+
+
+            {/* <h2>Let's Connect</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p> */}
           </div>
 
+
           <div className="container">
+
             <div className="row gy-4">
               <div className="col-lg-5">
 
@@ -1010,8 +915,8 @@ function App() {
                     <i className="bi bi-chat-dots"></i>
                   </div>
                   <div className="info-content">
-                    <h4>Let's Connect</h4>
-                    <p>We're here to discuss your vision and explore how we can bring it to life together.</p>
+                    <h4>Contactenos</h4>
+                    <p>Estamos aquí para hablar sobre su visión y explorar cómo podemos hacerla realidad juntos.</p>
                   </div>
                 </div>
 
@@ -1032,8 +937,8 @@ function App() {
                       <i className="bi bi-telephone-outbound"></i>
                     </div>
                     <div className="detail-content">
-                      <span className="detail-label">Call us</span>
-                      <span className="detail-value">+1 (555) 432-8976</span>
+                      <span className="detail-label">Telefonos</span>
+                      <span className="detail-value">+51 945945379</span>
                     </div>
                   </div>
 
@@ -1042,8 +947,8 @@ function App() {
                       <i className="bi bi-geo-alt-fill"></i>
                     </div>
                     <div className="detail-content">
-                      <span className="detail-label">Visit us</span>
-                      <span className="detail-value">547 Madison Avenue<br />New York, NY 10022</span>
+                      <span className="detail-label">Visitenos</span>
+                      <span className="detail-value">Av. Billinghurst 1075, <br />San Juan de Miraflores</span>
                     </div>
                   </div>
 
@@ -1054,7 +959,7 @@ function App() {
               <div className="col-lg-7">
                 <div className="form-wrapper">
                   <div className="form-header">
-                    <h3>Send us a message</h3>
+                    <h3>Envianos tu mensaje</h3>
                   </div>
 
                   <form action="forms/contact.php" method="post" className="php-email-form">
@@ -1062,36 +967,36 @@ function App() {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label>Full Name</label>
+                          <label>Nombre y apellidos</label>
                           <input type="text" name="name" />
                         </div>
                       </div>
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label>Email Address</label>
+                          <label>Correo electronico</label>
                           <input type="email" name="email" />
                         </div>
                       </div>
                     </div>
 
                     <div className="form-group">
-                      <label>Subject</label>
+                      <label>Asunto</label>
                       <input type="text" name="subject" />
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="projectMessage">Message</label>
+                      <label htmlFor="projectMessage">Mensaje</label>
                       <textarea name="message" id="projectMessage"></textarea>
                     </div>
 
                     <div className="my-3">
                       <div className="loading">Loading</div>
                       <div className="error-message"></div>
-                      <div className="sent-message">Your message has been sent. Thank you!</div>
+                      <div className="sent-message">Su mensaje ha sido enviado. ¡Gracias!</div>
                     </div>
 
                     <button type="submit" className="submit-btn">
-                      <span>Send Message</span>
+                      <span>Enviar mensaje</span>
                       <i className="bi bi-arrow-right"></i>
                     </button>
 
@@ -1120,7 +1025,6 @@ function App() {
               </a>
               <p>En BERMAK encuentras asesoria, gestion de tramite y Productos en un solo lugar. Te acompanamos en gestiones legales, administrativas, registrales y municipales, y ademas te ofrecemos moda, hogar , accesorios y novedades atraves de BERMARK Market.</p>
               <div className="social-links d-flex mt-4">
-                <a href=""><i className="bi bi-twitter-x"></i></a>
                 <a href=""><i className="bi bi-facebook"></i></a>
                 <a href=""><i className="bi bi-instagram"></i></a>
                 <a href=""><i className="bi bi-linkedin"></i></a>
@@ -1128,33 +1032,32 @@ function App() {
             </div>
 
             <div className="col-lg-2 col-6 footer-links">
-              <h4>Useful Links</h4>
+              <h4>Nosotros</h4>
               <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
+                {/* <li><a href="#">About us</a></li> */}
+                <li><a href="#">Servicios</a></li>
+                {/* <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li> */}
               </ul>
             </div>
 
             <div className="col-lg-2 col-6 footer-links">
-              <h4>Our Services</h4>
+              <h4>Nuestros Servicios</h4>
               <ul>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Product Management</a></li>
-                <li><a href="#">Marketing</a></li>
-                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Asesoria Legal</a></li>
+                <li><a href="#">Asesoría Administrativa</a></li>
+                <li><a href="#">Asesoria Registral</a></li>
               </ul>
             </div>
 
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-              <h4>Contact Us</h4>
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p>United States</p>
-              <p className="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <h4>Contactanos</h4>
+              <p>Av. Billinghurst 1075, </p>
+              <p>San Juan de Miraflores</p>
+              <p>Peru</p>
+              <p className="mt-4"><strong>Telefono:</strong> <span>+51 945945379</span></p>
               <p><strong>Email:</strong> <span>info@example.com</span></p>
             </div>
 

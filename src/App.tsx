@@ -123,35 +123,35 @@ function App() {
                     En BERMAK encuentras asesoria, gestion de tramite y Productos en un solo lugar. Te acompanamos en gestiones legales, administrativas, registrales y municipales, y ademas te ofrecemos moda, hogar , accesorios y novedades atraves de BERMARK Market.
                   </p>
                   <div className="hero-cta" data-aos="fade-up" data-aos-delay="400">
-                    <a href="#about" className="btn-primary">Solicitar asesoria</a>
+                    <a href="#contact" className="btn-primary">Solicitar asesoria</a>
                     <a href="#https://www.youtube.com/watch?v=Y7f98aduVJ8" className="btn-secondary glightbox">
                       <i className="bi bi-play-circle"></i>
                       Explorar BERMAK
                     </a>
                   </div>
-                  <div className="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                  {/* <div className="hero-stats" data-aos="fade-up" data-aos-delay="500">
                     <div className="stat-item">
                       <div className="stat-number">
                         <i className="bi bi-people"></i>
                       </div>
-                      <div className="stat-label">4 Areas</div>
-                      <p>de asesoria y gestion</p>
+                      <p>4 Areas</p>
+                      <div className="stat-label">de asesoria y gestion</div>
                     </div>
                     <div className="stat-item">
                       <div className="stat-number">
                         <i className="bi bi-people"></i>
                       </div>
-                      <div className="stat-label">+ Servicios</div>
-                      <p>para personas y negocios</p>
+                      <p>+ Servicios</p>
+                      <div className="stat-label">para personas y negocios</div>
                     </div>
                     <div className="stat-item">
                       <div className="stat-number">
                         <i className="bi bi-people"></i>
                       </div>
-                      <div className="stat-label">+ Market</div>
-                      <p>moda, hogar y novedades</p>
+                      <p>+ Market </p>
+                      <div className="stat-label">moda, hogar y novedades</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -1034,9 +1034,9 @@ function App() {
             <div className="col-lg-2 col-6 footer-links">
               <h4>Nosotros</h4>
               <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#hero">Home</a></li>
                 {/* <li><a href="#">About us</a></li> */}
-                <li><a href="#">Servicios</a></li>
+                <li><a href="#services">Servicios</a></li>
                 {/* <li><a href="#">Terms of service</a></li>
                 <li><a href="#">Privacy policy</a></li> */}
               </ul>
@@ -1045,10 +1045,10 @@ function App() {
             <div className="col-lg-2 col-6 footer-links">
               <h4>Nuestros Servicios</h4>
               <ul>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Asesoria Legal</a></li>
-                <li><a href="#">Asesoría Administrativa</a></li>
-                <li><a href="#">Asesoria Registral</a></li>
+                <li><a href="#portfolio">Productos</a></li>
+                <li><a href="#services">Asesoria Legal</a></li>
+                <li><a href="#services">Asesoría Administrativa</a></li>
+                <li><a href="#services">Asesoria Registral</a></li>
               </ul>
             </div>
 

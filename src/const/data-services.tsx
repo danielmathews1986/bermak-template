@@ -66,7 +66,7 @@ export const dataServices = {
     ],
     seccion_inferior: [
       {
-        titulo: "ASESORÍA LEGAL",
+        titulo: "Asesoría Legal",
         descripcion: "Orientación y soporte en trámites y gestiones legales, con soluciones prácticas para proteger tu patrimonio y tus derechos.",
         subtitulo: "Principales servicios:",
         servicios: [
@@ -97,7 +97,7 @@ export const dataServices = {
         ]
       },
       {
-        titulo: "ASESORÍA ADMINISTRATIVA",
+        titulo: "Asesoría Administrativa",
         descripcion: "Apoyo en la gestión de trámites y procedimientos administrativos, facilitando soluciones rápidas y seguras para tus gestiones personales o de negocio.",
         subtitulo: "Principales servicios:",
         servicios: [
@@ -140,7 +140,7 @@ export const dataServices = {
         ]
       },
       {
-        titulo: "ASESORÍA REGISTRAL",
+        titulo: "Asesoría Registral",
         descripcion: "Acompañamiento en trámites ante SUNARP y otras entidades registrales, asegurando un proceso correcto, rápido y sin observaciones.",
         subtitulo: "Principales servicios:",
         servicios: [
@@ -179,7 +179,7 @@ export const dataServices = {
         ]
       },
       {
-        titulo: "ASESORÍA MUNICIPAL",
+        titulo: "Asesoría Municipal",
         descripcion: "Orientación en trámites y gestiones ante municipalidades, facilitando el cumplimiento de la normativa local para tus proyectos o propiedades.",
         subtitulo: "Principales servicios:",
         servicios: [

@@ -2,6 +2,7 @@ import './App.css'
 import logo from "../public/assets/img/logo-bermak.png"
 import { useEffect, useState } from 'react';
 import { SectionServices } from './features/components/services';
+import { CardService } from './features/components/cardService/cardService';
 
 function App() {
 
@@ -242,6 +243,12 @@ function App() {
 
         </section> */}
 
+        <section id="services2" className="services2 section">
+
+          <CardService />
+
+        </section>
+
 
         <section id="services" className="services section">
 
@@ -334,13 +341,12 @@ function App() {
         </section> */}
 
 
-        <section id="portfolio" className="portfolio section">
+        {/* <section id="portfolio" className="portfolio section">
 
 
           <div className="container section-title" data-aos="fade-up">
             <span className="subtitle">Productos</span>
             <h2>Visita nuestros productos</h2>
-            {/* <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>  */}
           </div>
 
           <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -600,7 +606,14 @@ function App() {
 
             </div>
 
-            {/* <div className="portfolio-conclusion" data-aos="fade-up" data-aos-delay="400">
+
+
+          </div>
+
+        </section> */}
+
+
+        {/* <div className="portfolio-conclusion" data-aos="fade-up" data-aos-delay="400">
               <div className="conclusion-content">
                 <h4>Ready to elevate your business?</h4>
                 <p>Let's discuss how we can transform your digital presence and drive meaningful results for your organization.</p>
@@ -615,10 +628,6 @@ function App() {
                 </div>
               </div>
             </div> */}
-
-          </div>
-
-        </section>
 
 
         {/* <section id="team" className="team section">
@@ -893,7 +902,7 @@ function App() {
 
         <section id="contact" className="contact section light-background">
 
-  
+
           <div className="container section-title" data-aos="fade-up">
             <span className="subtitle">Contactenos</span>
 
